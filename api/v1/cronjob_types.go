@@ -60,9 +60,11 @@ type CronJobSpec struct {
 // CronJobStatus defines the observed state of CronJob
 type CronJobStatus struct {
 	// +optional
+	// List of active jobs running currently
 	Active []corev1.LocalObjectReference `json:"active, omitempty"`
 
 	// +optional
+	// when the last successful schedule ran
 	LastScheduleTime *metav1.Time `json:"lastScheduleTime, omitempty`
 }
 
