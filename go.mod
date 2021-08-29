@@ -3,6 +3,9 @@ module samanyu6/kubernetes-controller
 go 1.16
 
 require (
+	github.com/go-logr/logr v0.3.0 // indirect
+	github.com/onsi/ginkgo v1.14.1 // indirect
+	github.com/onsi/gomega v1.10.2 // indirect
 	k8s.io/api v0.20.2 // indirect
 	k8s.io/apimachinery v0.20.2
 	k8s.io/client-go v0.20.2
